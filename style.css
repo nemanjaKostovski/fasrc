@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/*Variables*/
+
+:root {
+  --primary-color: #2790ba;
+}
+
+/*Basic styles*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+/*Navigation*/
+
+nav {
+  width: 100%;
+  height: 160px;
+  background-color: var(--primary-color);
+}
+
+/*Quick search*/
+
+#search {
+  background-image: url("images/outline_search_black_24dp.png");
+  background-size: 25px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: none;
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 120px;
+  height: 45px;
+}
+#search:focus {
+  background-image: none;
+  outline: none;
+}
+
+.top-nav {
+  border-bottom: 0.1px solid #709dac;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  height: 12px;
+  width: 12px;
+  margin-top: 40%;
+  margin-right: 5px;
+}
+
+#icons {
+  margin-right: 2%;
+}
+
+#header {
+  border-bottom: 0.05px solid #709dac;
+  display: flex;
+  justify-content: center;
+}
+
+#header h1 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  letter-spacing: 2px;
+}
+
+.logo {
+  margin-right: 10%;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 20%;
+  align-items: center;
+  height: 37px;
+}
+
+.navigation ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.navigation ul li a:hover {
+  background-color: black;
+}
+
+/* Big search */
+
+.searching {
+  margin-top: 2rem;
+  margin-left: 10%;
+  width: 80%;
+  height: 200px;
+  background-color: var(--primary-color);
+}
+
+.searching h2 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.searching input {
+  text-indent: 20px;
+  width: 80%;
+  height: 50px;
+  margin-top: 2rem;
+  margin-left: 10%;
+  border: none;
+}
+
+.searching input:focus {
+  outline: none;
+}
