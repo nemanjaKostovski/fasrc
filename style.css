@@ -134,3 +134,32 @@ nav {
 .searching input:focus {
   outline: none;
 }
+
+.cards {
+  margin-top: 2rem;
+  margin-left: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card {
+  background-color: var(--primary-color);
+  padding: 3%;
+  padding-bottom: 4%;
+  text-align: center;
+}
+
+.card-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+  padding-top: 1%;
+}
+
+.card h2 {
+  font-size: 1rem;
+}
